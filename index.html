@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markaz Qur'an - Mediator Studi Mesir</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Vibe Islami & Arabesque Modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: '#7A1C1C',
+                        maroonDark: '#5C1212',
+                        bonewhite: '#FDFBF7',
+                    },
+                    fontFamily: {
+                        arabic: ['Amiri', 'serif'],
+                        title: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* Background Motif Geometris Arab/Mesir Tradisional */
+        .bg-arabesque {
+            background-color: #FDFBF7;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 0l40 40-40 40L0 40z' fill='%237a1c1c' fill-opacity='0.02' fill-rule='evenodd'/%3E%3Ccircle cx='40' cy='40' r='10' fill='%237a1c1c' fill-opacity='0.015'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-bonewhite font-sans text-gray-800 bg-arabesque">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-40 top-0 border-b border-maroon/10">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-title font-bold text-maroon tracking-wider">MARKAZ QUR'AN</span>
+            </div>
+            <div class="hidden md:flex space-x-6 font-medium text-gray-600 text-sm tracking-wide">
+                <a href="#tentang" class="hover:text-maroon transition">Tentang Kami</a>
+                <a href="#faq" class="hover:text-maroon transition">Mengapa Kami</a>
+                <a href="#pengajar" class="hover:text-maroon transition">Pengajar</a>
+                <a href="#berita" class="hover:text-maroon transition">Berita & Prestasi</a>
+            </div>
+            <a href="https://instagram.com/markaz.mesir" target="_blank" class="bg-maroon text-bonewhite px-5 py-2 rounded font-semibold text-xs tracking-wider uppercase hover:bg-maroonDark transition shadow-md flex items-center gap-2">
+                <!-- IG Icon -->
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                @markaz.mesir
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO / PENGENALAN MEDIATOR -->
+    <header class="pt-32 pb-20 px-4 text-center border-b border-maroon/5 bg-gradient-to-b from-maroon/[0.02] to-transparent">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-maroon font-arabic text-3xl block mb-2 font-bold">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+            <h1 class="text-4xl md:text-6xl font-title font-bold text-gray-900 mb-6 tracking-wide">
+                Gerbang Studi Al-Azhar Mesir <br>Bersama <span class="text-maroon">Markaz Qur'an</span>
+            </h1>
+            <p class="text-base md:text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Kami adalah mediator resmi dan tepercaya yang membimbing, membekali, dan mengantarkan calon mahasiswa Indonesia menuju kesuksesan akademik dan spiritual di bumi kofah Mesir.
+            </p>
+            
+            <!-- DATA JUMLAH MURID (STATS) -->
+            <div class="grid grid-cols-3 gap-4 max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-md border border-maroon/5">
+                <div class="text-center">
+                    <div class="text-2xl md:text-4xl font-title font-bold text-maroon">150+</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wider font-semibold mt-1">Alumni di Mesir</div>
+                </div>
+                <div class="text-center border-x border-gray-100">
+                    <div class="text-2xl md:text-4xl font-title font-bold text-maroon">85+</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wider font-semibold mt-1">Santri Aktif</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl md:text-4xl font-title font-bold text-maroon">12</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-wider font-semibold mt-1">Syekh & Pengajar</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TENTANG KAMI -->
+    <section id="tentang" class="py-20 px-4 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-title font-bold text-maroon">Tentang Kami</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Markaz Qur'an didirikan dengan visi menjadi jembatan peradaban yang memfasilitasi putra-putri terbaik bangsa untuk menimba ilmu di Universitas Al-Azhar, Kairo. Kami mengintegrasikan bimbingan intensif tahfidz, bahasa Arab standar, dan wawasan keazharan.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Bukan sekadar mengurus administrasi pemberangkatan, kami mendampingi santri sejak masa karantina di Indonesia hingga proses adaptasi bertempat tinggal di Kairo, Mesir.
+                </p>
+            </div>
+            <div class="bg-maroon/5 p-8 rounded-2xl border border-maroon/10 flex items-center justify-center min-h-[250px] text-maroon/40 font-title tracking-widest text-sm">
+                [ VISUAL / LOGO MARKAZ QUR'AN ]
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ: MENGAPA HARUS MARKAZ QUR'AN? -->
+    <section id="faq" class="py-20 px-4 bg-maroon/5 border-y border-maroon/5">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-title font-bold text-center text-gray-900 mb-12">Mengapa Harus Markaz Qur'an?</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-maroon/5">
+                    <h3 class="font-bold text-lg text-maroon mb-2">Bimbingan Terstruktur & Sanad Jelas</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Kami menyediakan program talaqqi Al-Qur'an dan kitab turots langsung di bawah bimbingan para syekh Al-Azhar yang memiliki sanad keilmuan muttasil (bersambung).</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-maroon/5">
+                    <h3 class="font-bold text-lg text-maroon mb-2">Legalitas Resmi & Keamanan Terjamin</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Seluruh proses pengurusan berkas, visa, pendaftaran universitas, hingga pencarian tempat tinggal di Kairo ditangani secara transparan dan sesuai regulasi hukum resmi.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-maroon/5">
+                    <h3 class="font-bold text-lg text-maroon mb-2">Pendampingan Penuh di Kairo</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Santri tidak dilepas begitu saja. Tim perwakilan kami di Mesir siap siaga mendampingi proses adaptasi, bimbingan kuliah, hingga kebutuhan logistik harian.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFIL PENGAJAR (EDITABLE) -->
+    <section id="pengajar" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-title font-bold text-center text-maroon mb-4">Profil Pengajar & Masyayikh</h2>
+        <p class="text-center text-gray-500 max-w-xl mx-auto mb-12 text-sm">Dibimbing langsung oleh asatidzah berkompeten dan ulama alumni Al-Azhar Kairo.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Profil Pengajar 1 -->
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden text-center p-6">
+                <div class="w-28 h-28 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-400">[Foto 1x1]</div>
+                <h3 class="font-bold text-xl text-gray-900">Ustadz Ahmad Fauzi, Lc.</h3>
+                <p class="text-xs text-maroon font-semibold tracking-wider uppercase mt-1 mb-3">Lulusan Ushuluddin Al-Azhar</p>
+                <div class="text-xs text-gray-500 space-y-1 border-t border-gray-50 pt-3 text-left">
+                    <p><strong>Pendidikan:</strong> S1 Akidah Filsafat, Universitas Al-Azhar, Kairo.</p>
+                    <p><strong>Prestasi:</strong> Pemegang Sanad Qira'ah Hafs 'An 'Asim, Juara MHQ Nasional.</p>
+                </div>
+            </div>
+
+            <!-- Profil Pengajar 2 -->
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden text-center p-6">
+                <div class="w-28 h-28 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-400">[Foto 1x1]</div>
+                <h3 class="font-bold text-xl text-gray-900">Syekh Mahmoud Al-Misri</h3>
+                <p class="text-xs text-maroon font-semibold tracking-wider uppercase mt-1 mb-3">Penasihat Keilmuan Kairo</p>
+                <div class="text-xs text-gray-500 space-y-1 border-t border-gray-50 pt-3 text-left">
+                    <p><strong>Pendidikan:</strong> Magister Sastra Arab, Universitas Al-Azhar.</p>
+                    <p><strong>Prestasi:</strong> Pengajar Senior Turots & Balaghah di Sahn Al-Azhar.</p>
+                </div>
+            </div>
+
+            <!-- Profil Pengajar 3 -->
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden text-center p-6">
+                <div class="w-28 h-28 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-400">[Foto 1x1]</div>
+                <h3 class="font-bold text-xl text-gray-900">Ustadzah Fatimah Zahra, Lc.</h3>
+                <p class="text-xs text-maroon font-semibold tracking-wider uppercase mt-1 mb-3">Kepala Karantina Akhwat</p>
+                <div class="text-xs text-gray-500 space-y-1 border-t border-gray-50 pt-3 text-left">
+                    <p><strong>Pendidikan:</strong> S1 Syariah Islamiyyah, Al-Azhar Kairo.</p>
+                    <p><strong>Prestasi:</strong> Penulis Buku Pedoman Manhaj Azhari, Hafizhah 30 Juz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BERITA TERBARU & PRESTASI MURID -->
+    <section id="berita" class="py-20 px-4 bg-gray-900 text-bonewhite">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-title font-bold tracking-wide text-white">Berita & Prestasi Santri</h2>
+                <p class="text-gray-400 text-sm mt-2">Kabar terkini dan capaian membanggakan dari keluarga besar Markaz Qur'an.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Sisi Berita -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-title font-bold text-maroon border-b border-maroon/20 pb-2">Kabar Terkini</h3>
+                    <!-- Item Berita 1 -->
+                    <div class="bg-white/5 p-4 rounded-lg border border-white/10">
+                        <span class="text-xs text-maroon font-semibold">Mei 2026</span>
+                        <h4 class="font-bold text-md mt-1 mb-2">Pelepasan Keberangkatan Gelombang I Syawal 1447 H</h4>
+                        <p class="text-xs text-gray-400">Sebanyak 45 calon mahasiswa resmi diberangkatkan dari Bandara Soekarno-Hatta menuju Kairo setelah menyelesaikan karantina bahasa.</p>
+                    </div>
+                </div>
+
+                <!-- Sisi Prestasi -->
+                <div class="space-y-6">
+                    <h3 class="text-xl font-title font-bold text-maroon border-b border-maroon/20 pb-2">Prestasi Santri</h3>
+                    <!-- Item Prestasi 1 -->
+                    <div class="bg-white/5 p-4 rounded-lg border border-white/10">
+                        <span class="text-xs text-yellow-500 font-semibold">★ Mumtaz (Cumlaude)</span>
+                        <h4 class="font-bold text-md mt-1 mb-2">Santri Markaz Qur'an Meraih Nilai Tertinggi Ujian S1 Syariah</h4>
+                        <p class="text-xs text-gray-400">Ananda Muhammad Rezky berhasil meraih predikat Mumtaz Ma'al Martabatisy Syaraf pada ujian termin akhir di Fakultas Syariah Wal Qanun.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI ORANG TUA -->
+    <section class="py-20 px-4 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-title font-bold text-center text-gray-900 mb-12">Amanah & Kepercayaan Orang Tua</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Testi Ibu Astin -->
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm relative">
+                <span class="text-5xl text-maroon/10 absolute top-2 right-4 font-serif">“</span>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4 relative z-10 italic">
+                    "Alhamdulillah, keputusan menitipkan anak kami di Markaz Qur'an sangat tepat. Pengurusan berkas rapi, anak saya didampingi dengan sangat baik sejak tiba di Kairo, dan perkembangan hafalannya terus dipantau."
+                </p>
+                <div class="border-t border-gray-50 pt-3">
+                    <h4 class="font-bold text-sm text-gray-900">Ibu Astin Srimulatsih</h4>
+                    <p class="text-xs text-gray-400">Wali Santri Fawwaz (Fakultas Ushuluddin)</p>
+                </div>
+            </div>
+
+            <!-- Testi Orang Tua 2 -->
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm relative">
+                <span class="text-5xl text-maroon/10 absolute top-2 right-4 font-serif">“</span>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4 relative z-10 italic">
+                    "Sistem karantina bahasanya sangat efektif. Anak kami menjadi lebih percaya diri berbicara bahasa Arab setibanya di Mesir. Layanan perwakilan di Kairo juga sangat responsif membantu administrasi."
+                </p>
+                <div class="border-t border-gray-50 pt-3">
+                    <h4 class="font-bold text-sm text-gray-900">Bapak H. Rahman Hakim</h4>
+                    <p class="text-xs text-gray-400">Wali Santri Aisyah (Fakultas Dirasat Islamiyyah)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALAMAT & MAPS -->
+    <section class="py-20 px-4 bg-maroon text-bonewhite text-center">
+        <div class="max-w-3xl mx-auto space-y-6">
+            <h2 class="text-3xl font-title font-bold">Markaz Kami di Kairo</h2>
+            <p class="text-md max-w-xl mx-auto text-bonewhite/80 font-medium">
+                51 Toha Dinari, Hayy Sabi', Nasr City, Cairo, Egypt.
+            </p>
+            <!-- Tombol Google Maps -->
+            <div>
+                <a href="https://maps.google.com/?q=51+Toha+Dinari,+Hayy+El+Sabea,+Nasr+City,+Cairo,+Egypt" target="_blank" class="inline-flex items-center gap-2 bg-bonewhite text-maroon font-bold px-6 py-3 rounded shadow-md hover:bg-gray-100 transition text-sm tracking-wide">
+                    <!-- Maps Icon -->
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    Buka di Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-maroonDark text-bonewhite/60 text-xs py-6 text-center border-t border-white/5">
+        <p>© 2026 Markaz Qur'an Mesir. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>
+
+    <!-- FLOATING ACTIONS (WHATSAPP POJOK KANAN BAWAH) -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end">
+        <!-- Button WhatsApp -->
+        <a href="https://wa.me/6289518892001?text=Halo%20Admin%20Markaz%20Qur'an,%20saya%20ingin%20tanya%20seputar%20pemberangkatan%20ke%20Mesir." target="_blank" class="bg-green-600 text-white font-bold py-3 px-5 rounded-full shadow-2xl transition hover:bg-green-700 flex items-center gap-2 group text-sm">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span>Contact Us</span>
+        </a>
+    </div>
+
+</body>
+</html>
